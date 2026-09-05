@@ -1,7 +1,22 @@
-// FILE PARSER
+# C File Parser
 
-this program parses text file in the format of "file.txt" to content fvalue pairs
+A small C program that parses a text file containing content/value pairs and converts them into a C array of `Lyric` structures.
 
+## Input format
 
-    textFile        C array
-[content[fval]] => [{content, fval}]
+The input file uses the following format:
+
+```text
+ur text[10]
+and each duration [20.3]
+will be converted to a C array
+errors will be logged [22]
+
+==> to
+
+Lyric lyrics[] = {
+    {"ur text", 10.0f},
+    {"and each duration", 20.3f},
+    {"will be converted to a C array", 22.0f},
+    {"errors will be logged", 43.232f}
+};

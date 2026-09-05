@@ -1,3 +1,19 @@
+
+### `.gitignore`
+
+I'd use:
+
+```gitignore
+# Build directory
+build/
+
+# Executables
 main
 test
+app
+
+# Test files
 test.c
+
+# Compiler / IDE files
+compile_commands.json
